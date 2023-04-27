@@ -1,5 +1,6 @@
 package com.krejo.serviceBackend.Resource;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;
@@ -14,7 +15,7 @@ public class EmployeeResource {
     private String longitude;
     private String latitude;
 
-    public EmployeeResource (int id){
+    public EmployeeResource (@JsonProperty("id") int id){
         this.id = id;
     }
 }

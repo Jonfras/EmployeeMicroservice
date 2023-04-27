@@ -1,11 +1,15 @@
 package com.krejo.serviceBackend;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.krejo.serviceBackend.DTO.EmployeeDto;
 import com.krejo.serviceBackend.Data.Employee;
 import com.krejo.serviceBackend.Resource.EmployeeResource;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class EmployeeDataService {
 
@@ -53,7 +57,7 @@ public class EmployeeDataService {
         return convertEmployeeToEmployeeResource(employee);
     }
 
-    private EmployeeResource convertEmployeeToEmployeeResource(Employee employee) {
+    private static EmployeeResource convertEmployeeToEmployeeResource(Employee employee) {
         EmployeeResource employeeResource = new EmployeeResource(employee.getId());
 
         employeeResource.setName(employee.getName());
@@ -61,5 +65,36 @@ public class EmployeeDataService {
         employeeResource.setLatitude(employee.getLatitude());
 
         return employeeResource;
+    }
+
+    public static EmployeeResource convertJsonToEmployeeResource(String response) throws JsonProcessingException {
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        return objectMapper.readValue(response, EmployeeResource.class);
+    }
+
+
+
+    public EmployeeResource getEmployeeResource(int id) throws RuntimeException {
+        Employee employee = getEmployeeById(id);
+
+        if (employee != null){
+            return convertEmployeeToEmployeeResource(employee);
+        } else {
+            throw new RuntimeException();
+        }
+
+    }
+
+    public Employee getEmployeeById(int id) {
+
+        Optional<Employee> optionalEmployee = employeeList.stream()
+                .filter(x -> x.getId() == id)
+                .findFirst();
+
+        return optionalEmployee.orElse(null);
+
     }
 }

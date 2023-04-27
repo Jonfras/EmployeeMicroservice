@@ -7,6 +7,7 @@ import com.krejo.serviceBackend.Resource.ServiceResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @CrossOrigin
@@ -20,6 +21,11 @@ public class RESTController {
     private ServiceDataService serviceDataService;
 
 
+    //Schnittstelle für getEmployee(singular) wäre möglich
+    @GetMapping("/employee/{employeeId}")
+    public EmployeeResource getEmployee(@PathVariable int employeeId) {
+        return employeeDataService.getEmployeeResource(employeeId);
+    }
     @RequestMapping(value = "/employees", method = RequestMethod.GET)
     public List<EmployeeResource> getAllEmployees(){
         List<EmployeeResource> employeeResourceList = employeeDataService.getEmployeeResources();
@@ -32,6 +38,11 @@ public class RESTController {
         return employeeDataService.addEmployee(employeeDto);
     }
 
+    @GetMapping("/services/{serviceId}")
+    public ServiceResource getService(@PathVariable int serviceId) {
+        return serviceDataService.getServiceResource(serviceId);
+    }
+
     @GetMapping("/services")
     public List<ServiceResource> getAllServices() {
         List<ServiceResource> serviceResourceList = serviceDataService.getServiceResources();
@@ -39,10 +50,23 @@ public class RESTController {
         return serviceResourceList;
     }
 
-    //Todo: entsprechenden Postman POST Request mocha
     @PostMapping("/services")
-    public ServiceResource addService(@RequestBody ServiceDto serviceDto) {
-        return serviceDataService.addService(serviceDto);
+    public ServiceResource addService(@RequestBody ServiceDto serviceDto) throws IOException {
+            return serviceDataService.addService(serviceDto);
     }
+
+    @DeleteMapping("/services/{serviceId}")
+    public ServiceResource deleteService(@PathVariable int serviceId) {
+        return serviceDataService.deleteService(serviceId);
+    }
+
+    @PutMapping("services/{serviceId}")
+    public ServiceResource editService(@PathVariable int serviceId, @RequestBody ServiceDto serviceDto) throws IOException {
+        return serviceDataService.editService(serviceId, serviceDto);
+    }
+
+
+
+
 
 }

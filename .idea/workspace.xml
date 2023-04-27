@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2a4bd0-70a0-43cc-9710-f9f70bd9b8ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/EmployeeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/EmployeeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/ServiceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Data/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Data/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/EmployeeDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/RESTController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/EmployeeResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/ServiceResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/ServiceDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/EmployeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/EmployeeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/EmployeeDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/EmployeeDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/RESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/RESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/EmployeeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/EmployeeResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/ServiceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/ServiceResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/ServiceDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/ServiceDataService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,7 +89,57 @@
       <option name="presentableId" value="Default" />
       <updated>1682524481616</updated>
     </task>
+    <task id="LOCAL-00001" summary="bis einschließlich getAllServices geht ois(schau da todos au)">
+      <created>1682530345292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682530345293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bis einschließlich getAllServices geht ois(schau da todos au)" />
+    <option name="LAST_COMMIT_MESSAGE" value="bis einschließlich getAllServices geht ois(schau da todos au)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -107,5 +150,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EmployeeMicroservice$EmployeeApplication.ic" NAME="EmployeeApplication Coverage Results" MODIFIED="1682585410443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.krejo.*</FILTER>
+    </SUITE>
   </component>
 </project>
