@@ -22,7 +22,7 @@ public class RESTController {
 
 
     //Schnittstelle für getEmployee(singular) wäre möglich
-    @GetMapping("/employee/{employeeId}")
+    @GetMapping("/employees/{employeeId}")
     public EmployeeResource getEmployee(@PathVariable int employeeId) {
         return employeeDataService.getEmployeeResource(employeeId);
     }

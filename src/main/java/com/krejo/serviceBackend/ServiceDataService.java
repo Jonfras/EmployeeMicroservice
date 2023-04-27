@@ -23,7 +23,7 @@ import java.util.Optional;
 
 public class ServiceDataService {
 
-    private static final String getEmployee = "http://localhost:8080/serviceBackend/employee/";
+    private static final String getEmployee = "http://localhost:8080/serviceBackend/employees/";
 
 
     List<Service> serviceList = new ArrayList<>();

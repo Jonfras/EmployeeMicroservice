@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2a4bd0-70a0-43cc-9710-f9f70bd9b8ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Data/TypeAndName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/EmployeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/EmployeeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/ServiceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/DTO/ServiceDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/EmployeeDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/EmployeeDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/RESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/RESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/EmployeeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/EmployeeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/ServiceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/Resource/ServiceResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/ServiceDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/krejo/serviceBackend/ServiceDataService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,22 +46,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.krejo.serviceBackend" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.krejo.Client" />
+      <module name="EmployeeMicroservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.krejo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.krejo.EmployeeApplication" />
       <module name="EmployeeMicroservice" />
@@ -76,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.EmployeeApplication" />
       </list>
     </recent_temporary>
@@ -96,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682530345293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="serviceBackend is finished">
+      <created>1682595645232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682595645232</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,7 +162,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bis einschließlich getAllServices geht ois(schau da todos au)" />
-    <option name="LAST_COMMIT_MESSAGE" value="bis einschließlich getAllServices geht ois(schau da todos au)" />
+    <MESSAGE value="serviceBackend is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="serviceBackend is finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -150,6 +174,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EmployeeMicroservice$EmployeeApplication.ic" NAME="EmployeeApplication Coverage Results" MODIFIED="1682585410443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
